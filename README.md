@@ -40,9 +40,10 @@ Este script não substitui QoS, bom roteador ou link de qualidade
 
 ## 📜 Script
 
-### # ============================================================ 
-### #  OTIMIZAÇÃO MODERNA E SEGURA DE REDE - WINDOWS 10/11
-### # ============================================================ 
+```powershell
+# ============================================================ 
+#  OTIMIZAÇÃO MODERNA E SEGURA DE REDE - WINDOWS 10/11
+# ============================================================ 
 
 Clear-Host\
 Write-Host "====================================================" -ForegroundColor Cyan\
@@ -70,31 +71,31 @@ Write-Host "`n[AJUSTES AUXILIARES DE LATENCIA]" -ForegroundColor Yellow\
 netsh int tcp set global pacingprofile=off
 
 Write-Host "`nScript finalizado. Reinicie o computador." -ForegroundColor Green
+```
 
 -------------------------------------------------------------
 
-🔍 Explicação Técnica (Resumo)
+## 🔍 Explicação Técnica (Resumo)
 
-AutoTuning normal → janela TCP dinâmica e eficiente
-
-RSS enabled → melhor uso de múltiplos núcleos
-
-RSC disabled → menos jitter em tempo real
-
-ECN enabled → controle moderno de congestionamento
-
-Pacing off → menor latência perceptível
-
+AutoTuning normal → janela TCP dinâmica e eficiente\
+RSS enabled → melhor uso de múltiplos núcleos\
+RSC disabled → menos jitter em tempo real\
+ECN enabled → controle moderno de congestionamento\
+Pacing off → menor latência perceptível\
 Parâmetros obsoletos ou removidos do Windows moderno não são utilizados.
 
-🧠 Filosofia do Projeto
+-------------------------------------------------------------
+
+## 🧠 Filosofia do Projeto
 
 Menos tweak, mais engenharia.
 
 Este projeto existe para desmistificar scripts milagrosos e demonstrar como a pilha TCP do Windows funciona hoje.
 O Windows moderno é inteligente — o papel do profissional é não sabotá-lo.
 
-📌 Licença
+-------------------------------------------------------------
 
-Uso livre para estudo e aplicação prática.
+## 📌 Licença
+
+Uso livre para estudo e aplicação prática.\
 Teste sempre antes de usar em produção.
