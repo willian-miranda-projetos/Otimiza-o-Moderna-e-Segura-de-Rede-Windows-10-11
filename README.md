@@ -2,8 +2,8 @@
 
 Este repositório apresenta um script moderno, seguro e compatível com Windows 10/11 para limpeza e ajuste da pilha de rede, com foco em:
 
--estabilidade
--baixa latência real
+-estabilidade\
+-baixa latência real\
 -compatibilidade com ambientes corporativos (Active Directory / GPO)
 
 O objetivo não é “hackear” a internet, mas restaurar e ajustar corretamente o que o próprio Windows já faz bem, evitando tweaks obsoletos que ainda circulam na internet.
@@ -39,9 +39,11 @@ Este script não substitui QoS, bom roteador ou link de qualidade
 -------------------------------------------------------------
 
 ## 📜 Script
-"# ============================================================
+
+| # ============================================================ 
 #  OTIMIZAÇÃO MODERNA E SEGURA DE REDE - WINDOWS 10/11
-# ============================================================"
+# ============================================================ |
+|--------------------------------------------------------------|
 
 Clear-Host
 Write-Host "====================================================" -ForegroundColor Cyan
@@ -69,6 +71,8 @@ Write-Host "`n[AJUSTES AUXILIARES DE LATENCIA]" -ForegroundColor Yellow
 netsh int tcp set global pacingprofile=off
 
 Write-Host "`nScript finalizado. Reinicie o computador." -ForegroundColor Green
+
+-------------------------------------------------------------
 
 🔍 Explicação Técnica (Resumo)
 
