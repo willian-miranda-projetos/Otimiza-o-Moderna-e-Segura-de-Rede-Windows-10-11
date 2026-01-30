@@ -40,34 +40,33 @@ Este script não substitui QoS, bom roteador ou link de qualidade
 
 ## 📜 Script
 
-| # ============================================================ 
-#  OTIMIZAÇÃO MODERNA E SEGURA DE REDE - WINDOWS 10/11
-# ============================================================ |
-|--------------------------------------------------------------|
+### # ============================================================ 
+### #  OTIMIZAÇÃO MODERNA E SEGURA DE REDE - WINDOWS 10/11
+### # ============================================================ 
 
-Clear-Host
-Write-Host "====================================================" -ForegroundColor Cyan
-Write-Host " OTIMIZACAO MODERNA E SEGURA DE REDE - WINDOWS 10/11 " -ForegroundColor Cyan
+Clear-Host\
+Write-Host "====================================================" -ForegroundColor Cyan\
+Write-Host " OTIMIZACAO MODERNA E SEGURA DE REDE - WINDOWS 10/11 " -ForegroundColor Cyan\
 Write-Host "====================================================" -ForegroundColor Cyan
 
-Write-Host "`n[LIMPEZA DE ESTADO DE REDE]" -ForegroundColor Yellow
-ipconfig /flushdns
-ipconfig /release
-ipconfig /renew
+Write-Host "`n[LIMPEZA DE ESTADO DE REDE]" -ForegroundColor Yellow\
+ipconfig /flushdns\
+ipconfig /release\
+ipconfig /renew\
 arp -d *
 
-Write-Host "`n[RESET CONTROLADO DA PILHA DE REDE]" -ForegroundColor Yellow
-netsh winsock reset
+Write-Host "`n[RESET CONTROLADO DA PILHA DE REDE]" -ForegroundColor Yellow\
+netsh winsock reset\
 netsh int ip reset
 
-Write-Host "`n[AJUSTES TCP MODERNOS]" -ForegroundColor Yellow
-netsh int tcp set global autotuninglevel=normal
-netsh int tcp set global rss=enabled
-netsh int tcp set global rsc=disabled
-netsh int tcp set global ecncapability=enabled
-netsh int tcp set global timestamps=disabled
+Write-Host "`n[AJUSTES TCP MODERNOS]" -ForegroundColor Yellow\
+netsh int tcp set global autotuninglevel=normal\
+netsh int tcp set global rss=enabled\
+netsh int tcp set global rsc=disabled\
+netsh int tcp set global ecncapability=enabled\
+netsh int tcp set global timestamps=disabled\
 
-Write-Host "`n[AJUSTES AUXILIARES DE LATENCIA]" -ForegroundColor Yellow
+Write-Host "`n[AJUSTES AUXILIARES DE LATENCIA]" -ForegroundColor Yellow\
 netsh int tcp set global pacingprofile=off
 
 Write-Host "`nScript finalizado. Reinicie o computador." -ForegroundColor Green
