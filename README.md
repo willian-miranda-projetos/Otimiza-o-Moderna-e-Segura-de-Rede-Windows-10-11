@@ -1,51 +1,47 @@
-Otimização Moderna e Segura de Rede – Windows 10/11
+# Otimização Moderna e Segura de Rede – Windows 10/11
 
 Este repositório apresenta um script moderno, seguro e compatível com Windows 10/11 para limpeza e ajuste da pilha de rede, com foco em:
 
-estabilidade
-
-baixa latência real
-
-compatibilidade com ambientes corporativos (Active Directory / GPO)
+-estabilidade
+-baixa latência real
+-compatibilidade com ambientes corporativos (Active Directory / GPO)
 
 O objetivo não é “hackear” a internet, mas restaurar e ajustar corretamente o que o próprio Windows já faz bem, evitando tweaks obsoletos que ainda circulam na internet.
 
-🎯 Objetivos do Script
+------------------------------------------------------------
 
-Limpar estados problemáticos de rede (DNS, ARP, DHCP)
+## 🎯 Objetivos do Script
 
-Reset controlado da pilha TCP/IP e Winsock
-
-Ajustes TCP válidos para versões atuais do Windows
-
-Redução de jitter em aplicações sensíveis (jogos, VoIP, videoconferência)
-
+Limpar estados problemáticos de rede (DNS, ARP, DHCP)\
+Reset controlado da pilha TCP/IP e Winsock\
+Ajustes TCP válidos para versões atuais do Windows\
+Redução de jitter em aplicações sensíveis (jogos, VoIP, videoconferência)\
 Manter compatibilidade com políticas de domínio
 
-🖥️ Cenários de Uso
+------------------------------------------------------------
 
-Jogos online e aplicações em tempo real
+## 🖥️ Cenários de Uso
 
-Trabalho remoto e VPNs corporativas
-
-Máquinas que passaram por múltiplas VPNs/firewalls
-
+Jogos online e aplicações em tempo real\
+Trabalho remoto e VPNs corporativas\
+Máquinas que passaram por múltiplas VPNs/firewalls\
 Ambientes Windows ingressados em domínio
 
-⚠️ Avisos Importantes
+------------------------------------------------------------
 
-Execute o script como Administrador
+## ⚠️ Avisos Importantes
 
-Algumas alterações exigem reinicialização
-
-Em ambientes com GPO, parte das configurações pode ser revertida após reboot
-
+Execute o script como Administrador\
+Algumas alterações exigem reinicialização\
+Em ambientes com GPO, parte das configurações pode ser revertida após reboot\
 Este script não substitui QoS, bom roteador ou link de qualidade
 
-📜 Script
-# ============================================================
+-------------------------------------------------------------
+
+## 📜 Script
+"# ============================================================
 #  OTIMIZAÇÃO MODERNA E SEGURA DE REDE - WINDOWS 10/11
-# ============================================================
+# ============================================================"
 
 Clear-Host
 Write-Host "====================================================" -ForegroundColor Cyan
